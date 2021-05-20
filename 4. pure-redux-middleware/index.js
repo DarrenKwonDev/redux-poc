@@ -7,8 +7,9 @@ const { createLogger } = require("redux-logger");
 // middleware
 const logger = createLogger();
 const customLogger = (store) => (next) => (action) => {
-  console.log("====middleware!!====");
-  next(action); // next로 넘겨주지 않으면 리듀서로 액션을 진행하지 못합니다.
+  console.log("before action", store.getState());
+  next(action); // 액션을 넘겨주지 않으면 리듀서로 액션을 진행하지 못합니다.
+  console.log("after action", store.getState());
 };
 
 const enhancer = compose(applyMiddleware(logger, customLogger));

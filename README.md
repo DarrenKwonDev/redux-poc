@@ -10,6 +10,12 @@ https://redux.js.org/introduction/getting-started
 4. 단순 로깅용 middleware를 장착합니다.(redux-logger, custom middleware). applyMiddleware와 compose를 사용합니다.
    1. https://redux.js.org/understanding/history-and-design/middleware
 5. custom async thunk middleware. 비동기 처리. action을 함수로 넘길것.
-6. react-redux. react와의 접합.
+6. react-redux. react와의 접합. useSelector, useDispatch
    1. https://react-redux.js.org/
 7.
+
+## 추가적으로 참고해보면 좋을 자료들
+
+github.com/acdlite/redux-router#differences-with-react-router-redux
+github.com/reduxjs/redux/tree/master/examples/real-world
+github.com/joshgeller/react-redux-jwt-auth-example

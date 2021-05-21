@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { addPost } from "./_actions/post";
 import { asyncLogin, logOut } from "./_actions/user";
 
 function App() {
@@ -14,16 +15,16 @@ function App() {
   const LogoutClick = useCallback(() => {
     dispatch(logOut());
   }, []);
+  const postUpload = useCallback(() => {
+    dispatch(addPost({ userId: 1, id: 1, content: "my first post" }));
+  }, []);
 
   return (
     <>
       <div>hello</div>
       <button onClick={LoginClick}>login</button>
       <button onClick={LogoutClick}>logout</button>
-      <div>user state</div>
-      <div>
-        {user && Object.keys(user).map((el) => <div key={el}>{user[el]}</div>)}
-      </div>
+      <button onClick={postUpload}>postupload</button>
     </>
   );
 }

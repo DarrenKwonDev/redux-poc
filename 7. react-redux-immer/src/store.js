@@ -1,7 +1,7 @@
 import rootReducer from "./_reducers";
 const { createStore, applyMiddleware, compose } = require("redux");
+const { asyncLogin } = require("./_actions/user");
 const { createLogger } = require("redux-logger");
-import { composeWithDevTools } from "redux-devtools-extension";
 
 // middleware
 const logger = createLogger();
@@ -19,11 +19,22 @@ const thunkMiddleware = (store) => (next) => (action) => {
   next(action);
 };
 
-const enhancer = composeWithDevTools(applyMiddleware(thunkMiddleware, logger));
+const enhancer = compose(
+  applyMiddleware(thunkMiddleware, logger),
+  window.__REDUX_DEVTOOLS_EXTENSION__
+    ? window.__REDUX_DEVTOOLS_EXTENSION__()
+    : (args) => args
+);
 
-// store
+// store. 구조를 다 짜놔야 편함
 const initialState = {
-  user: null,
+  user: {
+    data: {
+      id: null,
+      name: null,
+    },
+    isLoggingIn: false,
+  },
   posts: [],
 };
 

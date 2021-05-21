@@ -12,7 +12,9 @@ https://redux.js.org/introduction/getting-started
 5. custom async thunk middleware. 비동기 처리. action을 함수로 넘길것.
 6. react-redux. react와의 접합. useSelector, useDispatch
    1. https://react-redux.js.org/
-7.
+7. immer로 immutable 유지.
+   1. https://github.com/immerjs/immer
+   2. https://react.vlpt.us/basic/23-immer.html
 
 ## 추가적으로 참고해보면 좋을 자료들
 

@@ -19,7 +19,12 @@ const thunkMiddleware = (store) => (next) => (action) => {
   next(action);
 };
 
-const enhancer = compose(applyMiddleware(thunkMiddleware, logger));
+const enhancer = compose(
+  applyMiddleware(thunkMiddleware, logger),
+  window.__REDUX_DEVTOOLS_EXTENSION__
+    ? window.__REDUX_DEVTOOLS_EXTENSION__()
+    : (args) => args
+);
 
 // store
 const initialState = {

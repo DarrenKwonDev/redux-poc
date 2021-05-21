@@ -1,7 +1,7 @@
+import rootReducer from "./_reducers";
 const { createStore, applyMiddleware, compose } = require("redux");
 const { asyncLogin } = require("./_actions/user");
 const { createLogger } = require("redux-logger");
-const rootReducer = require("../../5. pure-redux-thunk/reducers");
 
 // middleware
 const logger = createLogger();

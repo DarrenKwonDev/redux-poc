@@ -16,6 +16,6 @@ https://redux.js.org/introduction/getting-started
 
 ## 추가적으로 참고해보면 좋을 자료들
 
-github.com/acdlite/redux-router#differences-with-react-router-redux
-github.com/reduxjs/redux/tree/master/examples/real-world
+github.com/acdlite/redux-router#differences-with-react-router-redux  
+github.com/reduxjs/redux/tree/master/examples/real-world  
 github.com/joshgeller/react-redux-jwt-auth-example

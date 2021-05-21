@@ -8,4 +8,4 @@ const rootReducer = combineReducers({
   posts: postReducer,
 });
 
-module.exports = store;
+module.exports = rootReducer;

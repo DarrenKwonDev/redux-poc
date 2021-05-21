@@ -9,3 +9,4 @@ https://redux.js.org/introduction/getting-started
    1. https://redux.js.org/recipes/structuring-reducers/using-combinereducers
 4. 단순 로깅용 middleware를 장착합니다.(redux-logger, custom middleware). applyMiddleware와 compose를 사용합니다.
    1. https://redux.js.org/understanding/history-and-design/middleware
+5. custom async thunk middleware. 비동기 처리. action을 함수로 넘길것.

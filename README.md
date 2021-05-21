@@ -21,3 +21,13 @@ https://redux.js.org/introduction/getting-started
 github.com/acdlite/redux-router#differences-with-react-router-redux  
 github.com/reduxjs/redux/tree/master/examples/real-world  
 github.com/joshgeller/react-redux-jwt-auth-example
+
+## redux말고 react에서 immer 쓰고 싶어?
+
+local state에서 사용할 사람들은 아래 글을 읽어보자.
+
+- react에서는 알아보니 use-immer라는 녀석이 표준처럼 쓰이고 있더라. immerjs 공식 패키지니 이용 안 할 이유가 없을 듯.  
+  https://github.com/immerjs/use-immer
+
+- custom 훅으로 만들어서 사용하는 예는 아래 참고.  
+  https://css-tricks.com/using-immer-for-react-state-management/

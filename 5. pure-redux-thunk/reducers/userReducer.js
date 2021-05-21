@@ -10,9 +10,7 @@ const userReducer = (prevState = initialState, action) => {
         ...action.data,
       };
     case LOG_OUT:
-      return {
-        user: null,
-      };
+      return null;
     default:
       return prevState;
   }

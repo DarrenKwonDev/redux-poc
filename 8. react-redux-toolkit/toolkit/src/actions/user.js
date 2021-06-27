@@ -12,7 +12,8 @@ const delay = (time, value) =>
 exports.logIn = createAsyncThunk("user/logIn", async (data, thunkAPI) => {
   console.log("login in createAsyncThunk", data); // dispatch(login(...)) 꼴로 들어온 정보들
 
-  // 반환된 정보는 slice의 extraReducers의 함수의 두번째 인자인 action의 내부의 프로퍼티인 action.payload에 담기게 됨
+  // 반환된 정보는 slice의 extraReducers의 함수의 두번째 인자인 action의 내부의 프로퍼티인 fullfilled의 action.payload에 담기게 됨
+  // 만약 에러가 발생하면 action.error 안에 에러 정보들이 들어있음.
   return await delay(500, {
     userId: 11235,
     nickname: "darrenss",

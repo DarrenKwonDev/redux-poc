@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addPost } from "./actions/post";
+import { addErrorPost, addPost } from "./actions/post";
 
 function PostList() {
   const dispatch = useDispatch();
@@ -10,6 +10,9 @@ function PostList() {
   const onPostAddClick = () => {
     dispatch(addPost({ name: "post", desc: "this is post" }));
   };
+  const onPostErrorAddClick = () => {
+    dispatch(addErrorPost({ name: "post", desc: "this is post" }));
+  };
 
   return (
     <div>
@@ -17,6 +20,7 @@ function PostList() {
         <div>{el.name}</div>
       ))}
       <button onClick={onPostAddClick}>generate</button>
+      <button onClick={onPostErrorAddClick}>generate error</button>
     </div>
   );
 }

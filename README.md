@@ -15,6 +15,9 @@ https://redux.js.org/introduction/getting-started
 7. immer로 immutable 유지.
    1. https://github.com/immerjs/immer
    2. https://react.vlpt.us/basic/23-immer.html
+8. redux-toolkit
+   1. https://redux-toolkit.js.org/
+9.
 
 ## 추가적으로 참고해보면 좋을 자료들
 

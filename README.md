@@ -27,7 +27,9 @@ github.com/joshgeller/react-redux-jwt-auth-example
 
 ## redux말고 react에서 immer 쓰고 싶어?
 
-local state에서 사용할 사람들은 아래 글을 읽어보자.
+**그냥 RTK를 써라!!! 이게 표준이나 마찬가지**  
+
+~~local state에서 사용할 사람들은 아래 글을 읽어보자.~~
 
 - react에서는 알아보니 use-immer라는 녀석이 표준처럼 쓰이고 있더라. immerjs 공식 패키지니 이용 안 할 이유가 없을 듯.  
   https://github.com/immerjs/use-immer
